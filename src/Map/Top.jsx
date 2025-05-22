@@ -2,8 +2,8 @@ import * as THREE from 'three';
 import { useRef, useState } from 'react';
 import { Text3D, Html, Edges } from '@react-three/drei';
 import { gsap } from 'gsap';
-import Flylines from '../Decoration/Flylines.jsx';
-import Bird from '../Decoration/Bird.jsx';
+// import Flylines from '../Decoration/Flylines.jsx';
+// import Bird from '../Decoration/Bird.jsx';
 
 const config = {
 	color: '#9cb8e4',
@@ -109,9 +109,9 @@ const Top = ({ baseHeight, midHeightScale, topHeightScale, blocks, values, mapCe
 	return (
 		<>
 			{/* 飞鸟 */}
-			<Bird targetPosition={targetPosition} />
+			{/* <Bird targetPosition={targetPosition} /> */}
 			{/* 飞线 */}
-			<Flylines lines={lines} />
+			{/* <Flylines lines={lines} /> */}
 			{/* 点击后的城市maker */}
 			<Html
 				style={{

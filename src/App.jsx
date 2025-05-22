@@ -26,28 +26,6 @@ function App() {
 
 	return (
 		<Suspense fallback={<Loading />}>
-			{loaded && (
-				<div
-					style={{
-						position: 'absolute',
-						top: '10px',
-						zIndex: 1,
-						display: 'flex',
-						justifyContent: 'space-between',
-						alignItems: 'center',
-						width: '100%',
-						padding: '0 20px',
-						boxSizing: 'border-box',
-					}}
-				>
-					<h1 style={{ fontSize: '28px', color: 'black', fontFamily: 'zaozigongfangtianliti' }}>
-						Click the region on the map!
-					</h1>
-					<a href="https://github.com/xiaogua-bushigua/3d-geoMap" target="_blank">
-						<img src="./github.png" style={{ width: '48px', height: '48px' }} />
-					</a>
-				</div>
-			)}
 			<Canvas camera={{ position: [0, 12, 16], fov: 50 }}>
 				<ambientLight intensity={2} />
 				<OrbitControls
